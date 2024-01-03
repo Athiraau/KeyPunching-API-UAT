@@ -1,0 +1,31 @@
+
+-------------------------------------- KEY PUNCHING ------------------------------------------------
+
+GETFKEYDETAILS		3038~362607
+
+BRANCHKEYCONFIRM	3038~10065~392401
+
+{
+  "indata": "3038~10065~392401",
+  "flag": "BRANCHKEYCONFIRM"
+}
+
+
+
+
+-------Report----------
+KEYSTATUSRPT
+05-JUL-2023~05-JUL-2023~1
+
+------------------------------------------------------------------------------------------------------
+
+select t.*, t.rowid from BRANCH_KEY t where t.branch_id=3038 and to_date(t.tra_dt)=to_date(sysdate)
+
+
+
+
+
+
+
+
+
